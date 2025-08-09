@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JW Private Client AI Wealth Monitor</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1, h2, h3 {
+            color: #1a1a1a;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px auto;
+            width: 95%;
+            max-width: 1400px;
+            padding: 20px;
+            box-sizing: border-box;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .main-image {
+            max-width: 100%;
+            max-height: 85vh;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 0.5em;
+        }
+        h2 {
+            font-size: 1.5em;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        h3 {
+            font-size: 1.2em;
+            margin-top: 30px;
+        }
+        p {
+            margin-bottom: 1em;
+        }
+        strong {
+            font-weight: 600;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ddd;
+            margin: 40px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: 600;
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .header-author {
+            text-align: center;
+            font-style: italic;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .tech-stack-layer {
+            font-weight: bold;
+        }
+        .commitments ul {
+            list-style-type: '🤝';
+            padding-left: 30px;
+        }
+        .commitments li {
+            padding-left: 10px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🧠 JW Private Client AI Wealth Monitor</h1>
+    <p class="header-author">Authored by <strong>Parvesh Rawal</strong></p>
+    <div class="image-container">
+        <img src="image.png" alt="Wealth Management Visualization" class="main-image">
+    </div>
+    <p>This document outlines the technical nucleus of the system, translating strategic vision into actionable architecture. While not exhaustive of every feature discussed, this defines how core components will be constructed, executed, and scaled.</p>
+
+    <hr>
+
+    <h2>🔒 Core Infrastructure Requirements</h2>
+    <ol>
+        <li>
+            <strong>Custom AI Hosting Server</strong><br>
+            Required to ensure no confidential data leaves our ecosystem. GPU-backed, containerized setup with isolated data channels.
+        </li>
+        <li>
+            <strong>Encrypted Local Database</strong><br>
+            End-to-end protection using field-level encryption. Granular role-based access with audit logging.
+        </li>
+        <li>
+            <strong>OpenAI-like Memory Layer</strong><br>
+            Persistent and contextual memory across chats and sessions. Multi-threaded user profiles for preference modeling and continuity.
+        </li>
+        <li>
+            <strong>Google Search API Integration</strong><br>
+            Enables country-aware plan validation and real-time insights. Fallback logic for disconnected environments via pre-curated knowledge cache.
+        </li>
+        <li>
+            <strong>Multi-Component Protocol (MCP)</strong><br>
+            Abstracts external APIs via proxy layers to avoid direct exposure. API rotation and key isolation for enhanced backend security.
+        </li>
+        <li>
+            <strong>Model Selection Strategy</strong><br>
+            Lightweight transformer-based model adapted for retrieval-augmented generation. Hosted server-ready architecture (FP16/INT4), compatible with limited-GPU setups.
+        </li>
+    </ol>
+
+    <hr>
+
+    <h2>✨ Optional, High-Value Feature Set</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Automailing</td>
+                <td>Periodic insight dispatch and milestone-based strategy updates</td>
+            </tr>
+            <tr>
+                <td>Followbacks</td>
+                <td>Intelligent recovery flow after missed engagement or anomalies</td>
+            </tr>
+            <tr>
+                <td>Data Control Layer</td>
+                <td>User-managed deletion, anonymization, and history suppression</td>
+            </tr>
+            <tr>
+                <td>Live Search</td>
+                <td>Instant context-aware lookups and validation</td>
+            </tr>
+            <tr>
+                <td>Chat + Analysis Portal</td>
+                <td>Doubt solving with real-time numerical and narrative synthesis</td>
+            </tr>
+            <tr>
+                <td>Local Data Ops</td>
+                <td>Decentralized inference and encrypted API pipelines</td>
+            </tr>
+            <tr>
+                <td>Plan Generator</td>
+                <td>Adaptive blueprint creation based on trends and net worth deltas</td>
+            </tr>
+            <tr>
+                <td>Growth Monitor</td>
+                <td>Auto-suggestions triggered by threshold breaches or spikes</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h2>⚙️ Execution Flow</h2>
+    <ol>
+        <li>
+            <strong>Data Ingestion</strong><br>
+            Connectors to platforms like Plaid, Yodlee, and brokerage APIs. Manual input support for offline/non-digitized assets.
+        </li>
+        <li>
+            <strong>Secure Storage & Isolation</strong><br>
+            Confidential datasets stored in a layered DB schema with dual encryption.
+        </li>
+        <li>
+            <strong>Analytic Layer</strong><br>
+            Monthly financial metrics parsed via <code>Pandas</code>. Plots rendered using <code>Matplotlib</code> for portfolio drift, ROI, and exposure analytics.
+        </li>
+        <li>
+            <strong>AI Decisioning Engine</strong><br>
+            Structured insights sent as compressed context to AI server. Model returns investment strategies, risk posture, and optimization actions.
+        </li>
+        <li>
+            <strong>Compliance Review</strong><br>
+            Cross-checked via Search API and flagged for human oversight. Auto-routed to certified Series 65/CFP® advisors.
+        </li>
+        <li>
+            <strong>Client Delivery & Optimization</strong><br>
+            Reviewed report auto-dispatched to user. Follow-up chat-enabled interface for tuning month-on-month improvements.
+        </li>
+    </ol>
+
+    <hr>
+
+    <h2>🧰 Tech Stack</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Layer</th>
+                <th>Tools Used</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="tech-stack-layer">Frontend</td>
+                <td>React.js + TSX + TailwindCSS</td>
+            </tr>
+            <tr>
+                <td class="tech-stack-layer">Backend</td>
+                <td>Node.js + TypeScript</td>
+            </tr>
+            <tr>
+                <td class="tech-stack-layer">AI Server</td>
+                <td>Python + Custom quantized model</td>
+            </tr>
+            <tr>
+                <td class="tech-stack-layer">Data</td>
+                <td>MySQL + Vector DB (RAG engine)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <div class="commitments">
+        <h2>🤝 Our Commitments</h2>
+        <ul>
+            <li><strong>Beta Delivery</strong> in ≤ 30 days</li>
+            <li><strong>Unlimited Revisions</strong> during active build cycle</li>
+            <li><strong>Add-On Flexibility</strong> for new features post-deployment</li>
+            <li><strong>Satisfaction-Driven Support</strong> until final sign-off</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="footer">
+        <p><strong>Thank you</strong></p>
+        <p><strong>Parvesh Rawal</strong></p>
+    </div>
+
+</body>
+</html>
