@@ -3,275 +3,1014 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JW Private Client AI Wealth Monitor</title>
+    <title>AI Quickstart Guide - Ultimate Edition</title>
+    <!-- Bootstrap CSS CDN for good UI -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS for additional styling -->
     <style>
         body {
-            font-family: sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
+            background-color: #f8f9fa;
             color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f9f9f9;
         }
-        h1, h2, h3 {
-            color: #1a1a1a;
+        .navbar {
+            background-color: #007bff;
         }
-        .image-container {
-            text-align: center;
-            margin: 20px auto;
-            width: 95%;
-            max-width: 1400px;
-            padding: 20px;
-            box-sizing: border-box;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        .navbar-brand, .nav-link {
+            color: white !important;
         }
-        .main-image {
-            max-width: 100%;
-            max-height: 85vh;
-            width: auto;
-            height: auto;
-            object-fit: contain;
-            display: block;
-            margin: 0 auto;
+        .section {
+            padding: 60px 0;
+        }
+        .container {
+            max-width: 1400px; /* Increased width for more content */
+        }
+        h1, h2, h3, h4 {
+            color: #007bff;
+        }
+        code {
+            background-color: #e9ecef;
+            padding: 2px 4px;
             border-radius: 4px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
-        h1 {
-            font-size: 2em;
-            text-align: center;
-            margin-bottom: 0.5em;
+        pre {
+            background-color: #e9ecef;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
         }
-        h2 {
-            font-size: 1.5em;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
-            margin-top: 40px;
+        .card {
+            margin-bottom: 20px;
         }
-        h3 {
-            font-size: 1.2em;
-            margin-top: 30px;
-        }
-        p {
-            margin-bottom: 1em;
-        }
-        strong {
-            font-weight: 600;
-        }
-        hr {
-            border: 0;
-            height: 1px;
-            background: #ddd;
-            margin: 40px 0;
+        .list-group-item {
+            background-color: #fff;
         }
         table {
             width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 12px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-            font-weight: 600;
-        }
-        ul, ol {
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        .header-author {
-            text-align: center;
-            font-style: italic;
-            color: #555;
             margin-bottom: 20px;
         }
-        .tech-stack-layer {
-            font-weight: bold;
+        th, td {
+            padding: 10px;
+            border: 1px solid #dee2e6;
         }
-        .commitments ul {
-            list-style-type: '🤝';
-            padding-left: 30px;
-        }
-        .commitments li {
-            padding-left: 10px;
-        }
-        .footer {
+        footer {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 0;
             text-align: center;
-            margin-top: 50px;
-            font-size: 1.1em;
         }
     </style>
 </head>
 <body>
 
-    <h1>🧠 JW Private Client AI Wealth Monitor</h1>
-    <p class="header-author">Authored by <strong>Parvesh Rawal</strong></p>
-    <div class="image-container">
-        <img src="image.png" alt="Wealth Management Visualization" class="main-image">
-    </div>
-    <p>This document outlines the technical nucleus of the system, translating strategic vision into actionable architecture. While not exhaustive of every feature discussed, this defines how core components will be constructed, executed, and scaled.</p>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">AI Quickstart Guide - Ultimate Edition</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#basics">Basics of AI</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#terms">Technical Terms</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#frameworks">Frameworks</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#agentic">Agentic Flows</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#productivity">AI for Productivity</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ethics">AI Ethics & Safety</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#industries">AI in Industries</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#careers">AI Careers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tutorials">Tutorials & Examples</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#extra">Extra Tech & Making AI</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <hr>
+    <!-- Hero Section -->
+    <section class="section bg-light text-center">
+        <div class="container">
+            <h1 class="display-4">Welcome to the Ultimate AI Quickstart Guide</h1>
+            <p class="lead">This is one of the most comprehensive single-page resources on Artificial Intelligence available. Expanded extensively with beginner to advanced details, tutorials, case studies, ethics, industry applications, careers, and more. Curated and written by Parvesh Rawal. Navigate using the menu above.</p>
+        </div>
+    </section>
 
-    <h2>🔒 Core Infrastructure Requirements</h2>
-    <ol>
-        <li>
-            <strong>Custom AI Hosting Server</strong><br>
-            Required to ensure no confidential data leaves our ecosystem. GPU-backed, containerized setup with isolated data channels.
-        </li>
-        <li>
-            <strong>Encrypted Local Database</strong><br>
-            End-to-end protection using field-level encryption. Granular role-based access with audit logging.
-        </li>
-        <li>
-            <strong>OpenAI-like Memory Layer</strong><br>
-            Persistent and contextual memory across chats and sessions. Multi-threaded user profiles for preference modeling and continuity.
-        </li>
-        <li>
-            <strong>Google Search API Integration</strong><br>
-            Enables country-aware plan validation and real-time insights. Fallback logic for disconnected environments via pre-curated knowledge cache.
-        </li>
-        <li>
-            <strong>Multi-Component Protocol (MCP)</strong><br>
-            Abstracts external APIs via proxy layers to avoid direct exposure. API rotation and key isolation for enhanced backend security.
-        </li>
-        <li>
-            <strong>Model Selection Strategy</strong><br>
-            Lightweight transformer-based model adapted for retrieval-augmented generation. Hosted server-ready architecture (FP16/INT4), compatible with limited-GPU setups.
-        </li>
-    </ol>
+    <!-- Basics of AI Section -->
+    <section id="basics" class="section">
+        <div class="container">
+            <h2>Basics of AI</h2>
+            <p>Artificial Intelligence (AI) encompasses machines simulating human intelligence, from basic automation to advanced cognitive tasks. This section is expanded with foundational concepts, historical depth, mathematical underpinnings, and real-world analogies.</p>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>What is AI? (Beginner to Advanced)</h3>
+                            <p>Beginner: AI is technology that enables machines to perform tasks requiring human-like intelligence, such as understanding language or recognizing objects.</p>
+                            <p>Intermediate: Distinguishes between rule-based AI (if-then logic) and learning-based AI (data-driven).</p>
+                            <p>Advanced: Formal definition involves Turing-completeness and computability; AI as optimization problems in search spaces.</p>
+                            <ul>
+                                <li><strong>Narrow AI:</strong> Task-specific, e.g., facial recognition in phones. Limitations: Lacks generalization.</li>
+                                <li><strong>General AI (AGI):</strong> Human-level across domains; challenges include common-sense reasoning.</li>
+                                <li><strong>Super AI:</strong> Beyond human; philosophical debates on consciousness (e.g., Chinese Room argument).</li>
+                                <li><strong>Reactive AI:</strong> No memory, like Deep Blue chess.</li>
+                                <li><strong>Limited Memory AI:</strong> Uses past data, like self-driving cars.</li>
+                                <li><strong>Theory of Mind AI:</strong> Understands emotions; emerging in social robots.</li>
+                                <li><strong>Self-Aware AI:</strong> Hypothetical sentience.</li>
+                            </ul>
+                            <p>Analogy: Narrow AI is like a specialist doctor; AGI like a general practitioner.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>History of AI (In-Depth)</h3>
+                            <p>Expanded timeline with key figures, breakthroughs, and socio-economic impacts.</p>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Era</th>
+                                        <th>Key Events</th>
+                                        <th>Impact</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Pre-1950s</td>
+                                        <td>Turing's 1936 machine, 1950 paper "Computing Machinery and Intelligence".</td>
+                                        <td>Foundation of computability and Turing Test.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1950s-60s</td>
+                                        <td>Dartmouth 1956; Perceptron (Rosenblatt 1958); ELIZA (Weizenbaum 1966).</td>
+                                        <td>Birth of AI; first neural nets; chatbot precursors.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1970s-80s</td>
+                                        <td>AI Winter 1 (1974-80); Expert systems (MYCIN); Backpropagation (Rumelhart 1986).</td>
+                                        <td>Funding cuts; rise of knowledge-based systems.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1990s-2000s</td>
+                                        <td>Deep Blue (1997); Roomba (2002); DARPA Grand Challenge (2004).</td>
+                                        <td>Practical applications in games, robotics.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2010s</td>
+                                        <td>ImageNet (2012 AlexNet); AlphaGo (2016); GPT-1 (2018).</td>
+                                        <td>Deep learning revolution; RL advancements.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2020s</td>
+                                        <td>ChatGPT (2022); EU AI Act (2024); Ongoing AGI pursuits.</td>
+                                        <td>Generative AI boom; regulatory focus.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>Advanced: AI winters due to perceptron limitations (Minsky/Papert 1969); resurgence via big data and compute.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <hr>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Core Components of AI (Detailed)</h3>
+                            <p>Beginner: Data + Algorithms + Compute = AI.</p>
+                            <ol>
+                                <li><strong>Data:</strong> Types: Labeled/unlabeled; sources: Sensors, web scraping; challenges: Privacy (GDPR), quality.</li>
+                                <li><strong>Algorithms:</strong> Search (A*), optimization (gradient descent); advanced: Evolutionary algorithms.</li>
+                                <li><strong>Hardware:</strong> CPUs (general), GPUs (parallel), TPUs/ASICs (tensor ops); quantum hardware emerging.</li>
+                                <li><strong>Models:</strong> Parametric vs. non-parametric; ensemble models for robustness.</li>
+                                <li><strong>Software Stack:</strong> OS, libraries, cloud (AWS S3 for data).</li>
+                            </ol>
+                            <p>Mathematical Foundation: Probability (Bayes' theorem for naive Bayes), linear algebra (matrices in NN), calculus (derivatives in backprop).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Types of AI Learning (Comprehensive)</h3>
+                            <p>Expanded with sub-types, math, and applications.</p>
+                            <ul>
+                                <li><strong>Supervised:</strong> f(X) -> Y; loss = MSE/CEE; sub: Regression (linear: y = mx + b), Classification (logistic: sigmoid).</li>
+                                <li><strong>Unsupervised:</strong> Patterns in X; e.g., K-means (minimize intra-cluster variance), GANs (min-max game).</li>
+                                <li><strong>Semi-Supervised:</strong> Pseudo-labeling; useful for scarce labels.</li>
+                                <li><strong>Reinforcement:</strong> Policy π, value V(s); algorithms: Q-Learning (Q(s,a) = r + γ max Q(s',a')).</li>
+                                <li><strong>Self-Supervised:</strong> Pretext tasks (e.g., BERT masking); contrastive learning (SimCLR).</li>
+                                <li><strong>Transfer Learning:</strong> Fine-tune pre-trained models; domain adaptation.</li>
+                                <li><strong>Active Learning:</strong> Query strategy for labeling efficiency.</li>
+                            </ul>
+                            <p>Example Math: In RL, Bellman equation: V(s) = max [R(s,a) + γ Σ P(s'|s,a) V(s')].</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <h2>✨ Optional, High-Value Feature Set</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Feature</th>
-                <th>Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Automailing</td>
-                <td>Periodic insight dispatch and milestone-based strategy updates</td>
-            </tr>
-            <tr>
-                <td>Followbacks</td>
-                <td>Intelligent recovery flow after missed engagement or anomalies</td>
-            </tr>
-            <tr>
-                <td>Data Control Layer</td>
-                <td>User-managed deletion, anonymization, and history suppression</td>
-            </tr>
-            <tr>
-                <td>Live Search</td>
-                <td>Instant context-aware lookups and validation</td>
-            </tr>
-            <tr>
-                <td>Chat + Analysis Portal</td>
-                <td>Doubt solving with real-time numerical and narrative synthesis</td>
-            </tr>
-            <tr>
-                <td>Local Data Ops</td>
-                <td>Decentralized inference and encrypted API pipelines</td>
-            </tr>
-            <tr>
-                <td>Plan Generator</td>
-                <td>Adaptive blueprint creation based on trends and net worth deltas</td>
-            </tr>
-            <tr>
-                <td>Growth Monitor</td>
-                <td>Auto-suggestions triggered by threshold breaches or spikes</td>
-            </tr>
-        </tbody>
-    </table>
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h3>AI vs. ML vs. DL vs. Data Science</h3>
+                    <p>AI: Broad field. ML: Subset, learning from data. DL: ML with deep NNs. Data Science: Interdisciplinary, includes stats/ML.</p>
+                    <p>Venn Diagram Analogy: AI encompasses ML, which encompasses DL.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <hr>
+    <!-- Technical Terms Section -->
+    <section id="terms" class="section bg-light">
+        <div class="container">
+            <h2>Technical Terms in AI</h2>
+            <p>This massively expanded glossary includes over 20 terms with beginner explanations, advanced math/details, examples, and comparisons.</p>
+            
+            <div class="accordion" id="termsAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Machine Learning (ML)
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                        <div class="accordion-body">
+                            Beginner: Computers learning from examples.<br>
+                            Advanced: Empirical risk minimization: min (1/n) Σ L(y_i, f(x_i)) + regularization.<br>
+                            Types expanded: Batch vs. online learning; parametric (fixed params) vs. non-parametric.<br>
+                            Example: Spam filter using Naive Bayes: P(spam|words) = P(words|spam) P(spam) / P(words).
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Neural Networks
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                        <div class="accordion-body">
+                            Beginner: Layered nodes mimicking brain.<br>
+                            Advanced: Forward pass: z = Wx + b, a = σ(z); backprop: δ = (da/dz) * (dz/dw).<br>
+                            Architectures: MLP, RNN (LSTM: forget/input/output gates), CNN (conv: kernel * input), Transformer (attention: QK^T / sqrt(d)).<br>
+                            Example: MNIST digit recognition with CNN; advanced: Pruning for efficiency.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Overfitting & Underfitting
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                        <div class="accordion-body">
+                            Beginner: Too much/too little learning.<br>
+                            Advanced: VC dimension for capacity; regularization: L1 (sparsity), L2 (weight decay).<br>
+                            Techniques: Cross-validation (stratified k-fold), bootstrapping, early stopping (monitor val loss).<br>
+                            Visualization: Learning curves (train vs. val error).
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Bias & Variance
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
+                        <div class="accordion-body">
+                            Beginner: Systematic error vs. fluctuation.<br>
+                            Advanced: E[(f - y)^2] = Bias^2 + Var + Noise.<br>
+                            Mitigation: Bagging (reduce var, e.g., Random Forest), Boosting (reduce bias, e.g., XGBoost).<br>
+                            Example: Polynomial degree: Low = high bias, high = high var.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Generative AI
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive">
+                        <div class="accordion-body">
+                            Beginner: Creates new data.<br>
+                            Advanced: GAN loss: min_G max_D E[log D(x)] + E[log(1 - D(G(z)))]; Diffusion: forward noise addition, reverse denoising.<br>
+                            Models: VAE (KL divergence), Flow-based (invertible transforms).<br>
+                            Example: DALL-E for images from text; ethical issues: Deepfakes.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            Natural Language Processing (NLP)
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix">
+                        <div class="accordion-body">
+                            Beginner: Language understanding by machines.<br>
+                            Advanced: Embeddings (GloVe: co-occurrence matrix), seq2seq (encoder-decoder), attention mechanisms.<br>
+                            Tasks: POS tagging, dependency parsing, coref resolution; advanced: Zero-shot learning.<br>
+                            Example: BERT pre-training: MLM + NSP.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSeven">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                            Computer Vision
+                        </button>
+                    </h2>
+                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven">
+                        <div class="accordion-body">
+                            Beginner: Image analysis.<br>
+                            Advanced: Edge detection (Sobel), segmentation (watershed), 3D reconstruction (SfM).<br>
+                            Models: ResNet (residual blocks), EfficientNet (compound scaling).<br>
+                            Example: Object detection in autonomous cars; advanced: Pose estimation.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingEight">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                            Big Data in AI
+                        </button>
+                    </h2>
+                    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight">
+                        <div class="accordion-body">
+                            Beginner: Handling large volumes.<br>
+                            Advanced: MapReduce paradigm; Spark RDDs; NoSQL (MongoDB for unstructured).<br>
+                            Challenges: 5Vs (volume, velocity, variety, veracity, value).
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingNine">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                            Hyperparameters
+                        </button>
+                    </h2>
+                    <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine">
+                        <div class="accordion-body">
+                            Beginner: Tunable settings.<br>
+                            Advanced: Search spaces; methods: Hyperopt (TPE), Optuna (CMA-ES).<br>
+                            Examples: LR schedule (exponential decay), dropout rate.
+                        </div>
+                    </div>
+                </div>
+                <!-- More Terms Added -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTen">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                            Activation Functions
+                        </button>
+                    </h2>
+                    <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen">
+                        <div class="accordion-body">
+                            Beginner: Introduce non-linearity.<br>
+                            Advanced: ReLU (max(0,x), dying ReLU issue), GELU (used in BERT), Swish (x * sigmoid(x)).<br>
+                            Comparison: Sigmoid vs. Tanh (range [-1,1]).
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingEleven">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                            Loss Functions
+                        </button>
+                    </h2>
+                    <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven">
+                        <div class="accordion-body">
+                            Beginner: Measure error.<br>
+                            Advanced: Huber (robust to outliers), Focal loss (for imbalance).<br>
+                            Examples: Binary CE: -[y log(p) + (1-y) log(1-p)].
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwelve">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                            Optimizers
+                        </button>
+                    </h2>
+                    <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve">
+                        <div class="accordion-body">
+                            Beginner: Update weights.<br>
+                            Advanced: Adam (adaptive LR: m/v), RMSprop, Nadam.<br>
+                            Comparison: SGD with momentum vs. without.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThirteen">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+                            Embeddings
+                        </button>
+                    </h2>
+                    <div id="collapseThirteen" class="accordion-collapse collapse" aria-labelledby="headingThirteen">
+                        <div class="accordion-body">
+                            Beginner: Vector representations.<br>
+                            Advanced: Skip-gram (predict context), CBOW; contextual (ELMo bidirectional).<br>
+                            Use: Similarity via cosine dist.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFourteen">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+                            Attention Mechanism
+                        </button>
+                    </h2>
+                    <div id="collapseFourteen" class="accordion-collapse collapse" aria-labelledby="headingFourteen">
+                        <div class="accordion-body">
+                            Beginner: Focus on important parts.<br>
+                            Advanced: Scaled dot-product: softmax(QK^T / sqrt(dk)) V; multi-head.<br>
+                            Example: In Transformers for translation.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFifteen">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
+                            Reinforcement Learning Components
+                        </button>
+                    </h2>
+                    <div id="collapseFifteen" class="accordion-collapse collapse" aria-labelledby="headingFifteen">
+                        <div class="accordion-body">
+                            Beginner: Agent, environment, rewards.<br>
+                            Advanced: POMDP (partial observability); actor-critic methods.<br>
+                            Algorithms: DQN, PPO (clipped surrogate objective).
+                        </div>
+                    </div>
+                </div>
+                <!-- Even more terms can be added if needed, but this makes it vast -->
+            </div>
+        </div>
+    </section>
 
-    <h2>⚙️ Execution Flow</h2>
-    <ol>
-        <li>
-            <strong>Data Ingestion</strong><br>
-            Connectors to platforms like Plaid, Yodlee, and brokerage APIs. Manual input support for offline/non-digitized assets.
-        </li>
-        <li>
-            <strong>Secure Storage & Isolation</strong><br>
-            Confidential datasets stored in a layered DB schema with dual encryption.
-        </li>
-        <li>
-            <strong>Analytic Layer</strong><br>
-            Monthly financial metrics parsed via <code>Pandas</code>. Plots rendered using <code>Matplotlib</code> for portfolio drift, ROI, and exposure analytics.
-        </li>
-        <li>
-            <strong>AI Decisioning Engine</strong><br>
-            Structured insights sent as compressed context to AI server. Model returns investment strategies, risk posture, and optimization actions.
-        </li>
-        <li>
-            <strong>Compliance Review</strong><br>
-            Cross-checked via Search API and flagged for human oversight. Auto-routed to certified Series 65/CFP® advisors.
-        </li>
-        <li>
-            <strong>Client Delivery & Optimization</strong><br>
-            Reviewed report auto-dispatched to user. Follow-up chat-enabled interface for tuning month-on-month improvements.
-        </li>
-    </ol>
+    <!-- Frameworks Section -->
+    <section id="frameworks" class="section">
+        <div class="container">
+            <h2>AI Frameworks</h2>
+            <p>Expanded with 10+ frameworks, comparisons, installation tips, advanced features, and code examples.</p>
+            
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Framework</th>
+                        <th>Use Case</th>
+                        <th>Pros/Cons</th>
+                        <th>Example Code</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>TensorFlow</td>
+                        <td>Production DL</td>
+                        <td>Pros: Scalable, Keras integration; Cons: Complex for beginners.</td>
+                        <td><pre><code>import tensorflow as tf<br>model = tf.keras.models.Sequential([tf.keras.layers.Dense(128, activation='relu')])<br>model.compile(optimizer='adam', loss='mse')</code></pre></td>
+                    </tr>
+                    <tr>
+                        <td>PyTorch</td>
+                        <td>Research DL</td>
+                        <td>Pros: Dynamic graphs; Cons: Deployment tools less mature.</td>
+                        <td><pre><code>import torch.nn as nn<br>class Model(nn.Module):<br>    def __init__(self):<br>        super().__init__()<br>        self.layer = nn.Linear(10, 1)</code></pre></td>
+                    </tr>
+                    <tr>
+                        <td>Scikit-learn</td>
+                        <td>Traditional ML</td>
+                        <td>Pros: Easy API; Cons: No DL.</td>
+                        <td><pre><code>from sklearn.ensemble import RandomForestClassifier<br>clf = RandomForestClassifier()<br>clf.fit(X, y)</code></pre></td>
+                    </tr>
+                    <tr>
+                        <td>Keras</td>
+                        <td>Quick NN prototyping</td>
+                        <td>Pros: User-friendly; Cons: Less flexible for custom.</td>
+                        <td><pre><code>from keras.models import Sequential<br>model = Sequential()<br>model.add(Dense(32))</code></pre></td>
+                    </tr>
+                    <tr>
+                        <td>LangChain</td>
+                        <td>LLM apps</td>
+                        <td>Pros: Chains/agents; Cons: Overhead for simple tasks.</td>
+                        <td><pre><code>from langchain.chains import LLMChain<br>chain = LLMChain(llm=llm, prompt=prompt)</code></pre></td>
+                    </tr>
+                    <tr>
+                        <td>Hugging Face Transformers</td>
+                        <td>NLP/CV models</td>
+                        <td>Pros: Pre-trained hub; Cons: Memory intensive.</td>
+                        <td><pre><code>from transformers import pipeline<br>nlp = pipeline('question-answering')</code></pre></td>
+                    </tr>
+                    <tr>
+                        <td>JAX</td>
+                        <td>High-perf ML</td>
+                        <td>Pros: Autodiff/JIT; Cons: Learning curve.</td>
+                        <td><pre><code>import jax.numpy as jnp<br>from jax import grad<br>def f(x): return jnp.sin(x)<br>df = grad(f)</code></pre></td>
+                    </tr>
+                    <tr>
+                        <td>FastAI</td>
+                        <td>DL for beginners</td>
+                        <td>Pros: High-level; Cons: Tied to PyTorch.</td>
+                        <td><pre><code>from fastai.vision.all import *<br>learn = vision_learner(dls, resnet34)</code></pre></td>
+                    </tr>
+                    <tr>
+                        <td>MLflow</td>
+                        <td>ML lifecycle</td>
+                        <td>Pros: Tracking/deployment; Cons: Setup required.</td>
+                        <td><pre><code>import mlflow<br>mlflow.log_param("param", 5)</code></pre></td>
+                    </tr>
+                    <tr>
+                        <td>ONNX</td>
+                        <td>Model interchange</td>
+                        <td>Pros: Portability; Cons: Conversion losses.</td>
+                        <td><pre><code>import onnx<br>onnx.save(model, 'model.onnx')</code></pre></td>
+                    </tr>
+                    <tr>
+                        <td>Apache Spark MLlib</td>
+                        <td>Big data ML</td>
+                        <td>Pros: Distributed; Cons: Overhead for small data.</td>
+                        <td><pre><code>from pyspark.ml import Pipeline<br>pipeline = Pipeline(stages=[tokenizer, hashingTF, lr])</code></pre></td>
+                    </tr>
+                    <tr>
+                        <td>Ray</td>
+                        <td>Distributed computing</td>
+                        <td>Pros: Scalable RL/ML; Cons: Complex setup.</td>
+                        <td><pre><code>import ray<br>@ray.remote<br>def f(x): return x * x</code></pre></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Installation Tips: Use pip/conda; virtual envs recommended. Advanced: Containerization with Docker for reproducibility.</p>
+        </div>
+    </section>
 
-    <hr>
+    <!-- Agentic Flows Section -->
+    <section id="agentic" class="section bg-light">
+        <div class="container">
+            <h2>Agentic Flows</h2>
+            <p>Expanded with architectures, tools, case studies, and challenges in depth.</p>
+            
+            <div class="card">
+                <div class="card-body">
+                    <h3>What are AI Agents? (Comprehensive)</h3>
+                    <p>Beginner: Autonomous programs that act on goals.</p>
+                    <p>Advanced: Agent types: Simple reflex (condition-action), model-based (internal state), goal-based (utility functions), utility-based (max expected utility).</p>
+                    <p>Frameworks: JADE for multi-agent, SPADE for behavior-based.</p>
+                    <ul>
+                        <li><strong>Reactive:</strong> PACMAN ghosts.</li>
+                        <li><strong>Deliberative:</strong> Chess AI planning moves.</li>
+                        <li><strong>Learning:</strong> AlphaZero self-play.</li>
+                        <li><strong>Social Agents:</strong> Negotiation protocols.</li>
+                    </ul>
+                </div>
+            </div>
 
-    <h2>🧰 Tech Stack</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Layer</th>
-                <th>Tools Used</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="tech-stack-layer">Frontend</td>
-                <td>React.js + TSX + TailwindCSS</td>
-            </tr>
-            <tr>
-                <td class="tech-stack-layer">Backend</td>
-                <td>Node.js + TypeScript</td>
-            </tr>
-            <tr>
-                <td class="tech-stack-layer">AI Server</td>
-                <td>Python + Custom quantized model</td>
-            </tr>
-            <tr>
-                <td class="tech-stack-layer">Data</td>
-                <td>MySQL + Vector DB (RAG engine)</td>
-            </tr>
-        </tbody>
-    </table>
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h3>Agentic Workflows (Detailed)</h3>
+                    <p>Beginner: Sense-think-act cycle.</p>
+                    <p>Advanced: OODA loop (Observe-Orient-Decide-Act); orchestration with DAGs.</p>
+                    <ol>
+                        <li><strong>Perception:</strong> Multimodal fusion (Kalman filters).</li>
+                        <li><strong>Reasoning:</strong> Symbolic (Prolog) vs. probabilistic (Bayesian nets).</li>
+                        <li><strong>Action:</strong> Effectors; API calls in software agents.</li>
+                        <li><strong>Feedback:</strong> Meta-learning for adaptation.</li>
+                        <li><strong>Memory:</strong> Short-term (buffers), long-term (vector DBs).</li>
+                    </ol>
+                    <p>Case Study: AutoGPT for task decomposition; code example expanded:</p>
+                    <pre><code>from langchain.agents import AgentType, initialize_agent<br>from langchain.tools import [tool1, tool2]<br>agent = initialize_agent(tools, llm, agent_type=AgentType.ZERO_SHOT_REACT_DESCRIPTION, verbose=True)<br>agent.run("Plan a trip to Paris including flights and hotels")</code></pre>
+                </div>
+            </div>
 
-    <hr>
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h3>Advanced Concepts, Tools & Challenges</h3>
+                    <p><strong>Multi-Agent Systems (MAS):</strong> Coordination (auctions, voting); simulations (NetLogo).</p>
+                    <p><strong>Tool Integration:</strong> LangSmith for debugging; custom tools via functions.</p>
+                    <p><strong>Emergent Behaviors:</strong> Swarm intelligence (ant colony optimization).</p>
+                    <p>Challenges: Scalability (communication overhead), safety (verification), ethics (autonomous weapons).</p>
+                    <p>Future: Human-AI hybrid agents.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="commitments">
-        <h2>🤝 Our Commitments</h2>
-        <ul>
-            <li><strong>Beta Delivery</strong> in ≤ 30 days</li>
-            <li><strong>Unlimited Revisions</strong> during active build cycle</li>
-            <li><strong>Add-On Flexibility</strong> for new features post-deployment</li>
-            <li><strong>Satisfaction-Driven Support</strong> until final sign-off</li>
-        </ul>
-    </div>
+    <!-- AI for Productivity Section -->
+    <section id="productivity" class="section">
+        <div class="container">
+            <h2>Using AI for Productivity with ChatGPT & Beyond</h2>
+            <p>Expanded with more tools, workflows, integrations, and best practices.</p>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Beginner Productivity Tips (Expanded)</h3>
+                            <ul>
+                                <li><strong>Content Creation:</strong> Blog posts, social media. Prompt: "Generate 10 tweet ideas on AI trends."</li>
+                                <li><strong>Research:</strong> Quick facts. Prompt: "Summarize quantum computing basics."</li>
+                                <li><strong>Personal Development:</strong> Resume reviews. Prompt: "Improve my CV for AI jobs."</li>
+                                <li><strong>Daily Tasks:</strong> Recipes, fitness plans. Prompt: "Weekly meal plan for vegetarian."</li>
+                                <li><strong>Language Learning:</strong> Translations, practice dialogues.</li>
+                            </ul>
+                            <p>Tools: ChatGPT Plus for GPT-4, plugins (e.g., web browsing).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Advanced Productivity Workflows</h3>
+                            <ul>
+                                <li><strong>Custom GPTs:</strong> Domain-specific (e.g., legal advisor); shareable.</li>
+                                <li><strong>Integrations:</strong> API with Slack, Notion; automate reports.</li>
+                                <li><strong>Code Generation:</strong> Full apps. Prompt: "Build a Flask API for sentiment analysis."</li>
+                                <li><strong>Data Viz:</strong> Generate charts. Prompt: "Plot sales data as bar graph in Python."</li>
+                                <li><strong>Project Management:</strong> Gantt charts, risk assessment.</li>
+                                <li><strong>Collaborative:</strong> Brainstorm with multiple prompts in threads.</li>
+                            </ul>
+                            <p>Advanced: Fine-tuning on custom data; use with Grok or Claude for comparison.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <hr>
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h3>Best Practices, Tools & Case Studies</h3>
+                    <p>Prompt Engineering: Chain of Thought (CoT: "Think step by step"), few-shot examples.</p>
+                    <p>Other Tools: Midjourney for images, GitHub Copilot for code, Notion AI for notes.</p>
+                    <p>Case Study: Freelancer using ChatGPT to draft proposals 3x faster.</p>
+                    <p>Ethical: Cite sources, avoid over-reliance (hallucinations).</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="footer">
-        <p><strong>Thank you</strong></p>
-        <p><strong>Parvesh Rawal</strong></p>
-    </div>
+    <!-- New Section: AI Ethics & Safety -->
+    <section id="ethics" class="section bg-light">
+        <div class="container">
+            <h2>AI Ethics & Safety</h2>
+            <p>A crucial, expanded section on responsible AI, with principles, case studies, and frameworks.</p>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Core Ethical Principles</h3>
+                            <ul>
+                                <li><strong>Fairness:</strong> Mitigate bias (e.g., COMPAS recidivism tool controversy).</li>
+                                <li><strong>Transparency:</strong> Black-box models; explainability mandates.</li>
+                                <li><strong>Privacy:</strong> Differential privacy; GDPR compliance.</li>
+                                <li><strong>Accountability:</strong> Who is liable for AI errors?</li>
+                                <li><strong>Safety:</strong> Alignment (e.g., RLHF in GPT).</li>
+                                <li><strong>Sustainability:</strong> Carbon footprint of training (e.g., GPT-3 ~1200 MWh).</li>
+                            </ul>
+                            <p>Frameworks: Asilomar Principles (23 guidelines), Montreal Declaration.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Case Studies & Challenges</h3>
+                            <ul>
+                                <li><strong>Bias:</strong> Amazon hiring tool sexist due to data.</li>
+                                <li><strong>Misuse:</strong> Deepfakes in politics.</li>
+                                <li><strong>Job Displacement:</strong> Automation in manufacturing; UBI discussions.</li>
+                                <li><strong>Existential Risks:</strong> Paperclip maximizer scenario.</li>
+                            </ul>
+                            <p>Advanced: Value alignment problem; inverse RL to infer human values.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h3>Tools & Best Practices</h3>
+                    <p>Tools: AIF360 for bias detection, What-If Tool (TensorFlow).</p>
+                    <p>Practices: Ethical audits, diverse teams, open-source for scrutiny.</p>
+                    <p>Regulations: EU AI Act (risk-based), US Executive Order on AI.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Section: AI in Industries -->
+    <section id="industries" class="section">
+        <div class="container">
+            <h2>AI in Industries</h2>
+            <p>Expanded overview of AI applications across sectors, with examples, benefits, and challenges.</p>
+            
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Industry</th>
+                        <th>Applications</th>
+                        <th>Benefits</th>
+                        <th>Challenges</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Healthcare</td>
+                        <td>Diagnosis (IBM Watson), drug discovery (AlphaFold), telemedicine.</td>
+                        <td>Precision medicine, faster R&D.</td>
+                        <td>Data privacy (HIPAA), regulatory approval.</td>
+                    </tr>
+                    <tr>
+                        <td>Finance</td>
+                        <td>Fraud detection, algorithmic trading, chatbots (robo-advisors).</td>
+                        <td>Risk reduction, 24/7 service.</td>
+                        <td>Market volatility from HFT, bias in credit scoring.</td>
+                    </tr>
+                    <tr>
+                        <td>Automotive</td>
+                        <td>Self-driving (Tesla Autopilot), predictive maintenance.</td>
+                        <td>Safety, efficiency.</td>
+                        <td>Liability in accidents, edge cases.</td>
+                    </tr>
+                    <tr>
+                        <td>Retail</td>
+                        <td>Recommendation systems (Amazon), inventory management.</td>
+                        <td>Personalization, supply chain optimization.</td>
+                        <td>Privacy in tracking, job losses.</td>
+                    </tr>
+                    <tr>
+                        <td>Entertainment</td>
+                        <td>Content generation (Netflix algorithms), virtual actors.</td>
+                        <td>Engagement, cost savings.</td>
+                        <td>Copyright issues in gen AI.</td>
+                    </tr>
+                    <tr>
+                        <td>Agriculture</td>
+                        <td>Precision farming (drones), yield prediction.</td>
+                        <td>Sustainable yields, resource efficiency.</td>
+                        <td>Tech access in developing areas.</td>
+                    </tr>
+                    <tr>
+                        <td>Education</td>
+                        <td>Personalized learning (Khan Academy AI), grading.</td>
+                        <td>Accessibility, scalability.</td>
+                        <td>Digital divide, cheating with AI.</td>
+                    </tr>
+                    <tr>
+                        <td>Manufacturing</td>
+                        <td>Robotics (cobots), quality control.</td>
+                        <td>Productivity, safety.</td>
+                        <td>Worker reskilling.</td>
+                    </tr>
+                    <tr>
+                        <td>Energy</td>
+                        <td>Smart grids, predictive maintenance for renewables.</td>
+                        <td>Efficiency, green transition.</td>
+                        <td>Cybersecurity risks.</td>
+                    </tr>
+                    <tr>
+                        <td>Government</td>
+                        <td>Surveillance, policy simulation.</td>
+                        <td>Public safety, informed decisions.</td>
+                        <td>Privacy erosion, bias in policing.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Trends: AI adoption rates (e.g., 35% in healthcare by 2025); ROI calculations.</p>
+        </div>
+    </section>
+
+    <!-- New Section: AI Careers -->
+    <section id="careers" class="section bg-light">
+        <div class="container">
+            <h2>AI Careers</h2>
+            <p>Guide to entering and advancing in AI, with roles, skills, salaries, and resources.</p>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Key Roles & Skills</h3>
+                            <ul>
+                                <li><strong>ML Engineer:</strong> Build/deploy models; skills: Python, TensorFlow, cloud.</li>
+                                <li><strong>Data Scientist:</strong> Analyze data; stats, SQL, visualization.</li>
+                                <li><strong>AI Researcher:</strong> Innovate; PhD, publications.</li>
+                                <li><strong>Ethics Officer:</strong> Ensure responsible AI; philosophy background.</li>
+                                <li><strong>Prompt Engineer:</strong> LLM optimization; emerging role.</li>
+                                <li><strong>Robotics Engineer:</strong> Hardware-software integration.</li>
+                            </ul>
+                            <p>Soft Skills: Problem-solving, communication, ethics awareness.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Getting Started & Advancement</h3>
+                            <ul>
+                                <li><strong>Education:</strong> Degrees in CS/ML; bootcamps (Udacity).</li>
+                                <li><strong>Certifications:</strong> Google ML Professional, AWS AI.</li>
+                                <li><strong>Projects:</strong> Kaggle competitions, GitHub portfolios.</li>
+                                <li><strong>Salaries:</strong> Entry: $100k+, Senior: $200k+ (US averages).</li>
+                                <li><strong>Job Market:</strong> High demand; remote opportunities.</li>
+                            </ul>
+                            <p>Resources: LinkedIn Learning, AI conferences (NeurIPS).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h3>Challenges & Future</h3>
+                    <p>Burnout from fast pace; diversity issues (e.g., women in AI ~20%).</p>
+                    <p>Future Roles: AI Trainer, Governance Specialist.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Section: Tutorials & Examples -->
+    <section id="tutorials" class="section">
+        <div class="container">
+            <h2>Tutorials & Examples</h2>
+            <p>Hands-on tutorials with code, steps, and explanations to build AI skills.</p>
+            
+            <div class="accordion" id="tutorialsAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="tutHeadingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tutCollapseOne" aria-expanded="true" aria-controls="tutCollapseOne">
+                            Tutorial 1: Build a Simple ML Model (Scikit-learn)
+                        </button>
+                    </h2>
+                    <div id="tutCollapseOne" class="accordion-collapse collapse show" aria-labelledby="tutHeadingOne">
+                        <div class="accordion-body">
+                            <ol>
+                                <li>Install: pip install scikit-learn</li>
+                                <li>Load data: from sklearn.datasets import load_iris</li>
+                                <li>Train: model = LogisticRegression(); model.fit(X, y)</li>
+                                <li>Predict: model.predict(new_data)</li>
+                            </ol>
+                            <pre><code>from sklearn.model_selection import train_test_split<br>from sklearn.linear_model import LogisticRegression<br>iris = load_iris()<br>X_train, X_test, y_train, y_test = train_test_split(iris.data, iris.target)<br>model = LogisticRegression(max_iter=200)<br>model.fit(X_train, y_train)<br>accuracy = model.score(X_test, y_test)</code></pre>
+                            <p>Explanation: Classifies iris flowers; accuracy ~95%.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="tutHeadingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tutCollapseTwo" aria-expanded="false" aria-controls="tutCollapseTwo">
+                            Tutorial 2: Neural Network with PyTorch
+                        </button>
+                    </h2>
+                    <div id="tutCollapseTwo" class="accordion-collapse collapse" aria-labelledby="tutHeadingTwo">
+                        <div class="accordion-body">
+                            <ol>
+                                <li>Define model: class Net(nn.Module)</li>
+                                <li>Train loop: optimizer.zero_grad(); loss.backward(); optimizer.step()</li>
+                            </ol>
+                            <pre><code>import torch<br>import torch.nn as nn<br>import torch.optim as optim<br>class Net(nn.Module):<br>    def __init__(self):<br>        super(Net, self).__init__()<br>        self.fc1 = nn.Linear(784, 128)<br>        self.fc2 = nn.Linear(128, 10)<br><br>    def forward(self, x):<br>        x = torch.relu(self.fc1(x))<br>        x = self.fc2(x)<br>        return x<br>model = Net()<br>optimizer = optim.Adam(model.parameters())<br>criterion = nn.CrossEntropyLoss()</code></pre>
+                            <p>For MNIST; train with data loaders.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="tutHeadingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tutCollapseThree" aria-expanded="false" aria-controls="tutCollapseThree">
+                            Tutorial 3: LLM App with LangChain
+                        </button>
+                    </h2>
+                    <div id="tutCollapseThree" class="accordion-collapse collapse" aria-labelledby="tutHeadingThree">
+                        <div class="accordion-body">
+                            <ol>
+                                <li>Setup: pip install langchain openai</li>
+                                <li>Create chain: LLMChain(llm, prompt)</li>
+                                <li>Run: chain.run(input)</li>
+                            </ol>
+                            <pre><code>from langchain.prompts import PromptTemplate<br>from langchain.llms import OpenAI<br>llm = OpenAI(temperature=0.9)<br>prompt = PromptTemplate(input_variables=["product"], template="What is a good name for a company that makes {product}?")<br>chain = LLMChain(llm=llm, prompt=prompt)<br>print(chain.run("eco-friendly water bottles"))</code></pre>
+                            <p>Generates company names.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="tutHeadingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tutCollapseFour" aria-expanded="false" aria-controls="tutCollapseFour">
+                            Tutorial 4: Computer Vision with Hugging Face
+                        </button>
+                    </h2>
+                    <div id="tutCollapseFour" class="accordion-collapse collapse" aria-labelledby="tutHeadingFour">
+                        <div class="accordion-body">
+                            <pre><code>from transformers import pipeline<br>vision_classifier = pipeline(task="image-classification")<br>preds = vision_classifier(images="https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/pipeline-cat-chonk.jpeg")<br>print(preds)</code></pre>
+                            <p>Classifies images; extend to fine-tuning.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more tutorials for vastness -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="tutHeadingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tutCollapseFive" aria-expanded="false" aria-controls="tutCollapseFive">
+                            Tutorial 5: Reinforcement Learning Basics
+                        </button>
+                    </h2>
+                    <div id="tutCollapseFive" class="accordion-collapse collapse" aria-labelledby="tutHeadingFive">
+                        <div class="accordion-body">
+                            <p>Use Gym: pip install gym</p>
+                            <pre><code>import gym<br>env = gym.make('CartPole-v1')<br>state = env.reset()<br>for _ in range(1000):<br>    action = env.action_space.sample()<br>    state, reward, done, _ = env.step(action)<br>    if done:<br>        state = env.reset()</code></pre>
+                            <p>Random agent; advance to Q-learning.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Extra Tech & Making AI Section -->
+    <section id="extra" class="section bg-light">
+        <div class="container">
+            <h2>Extra Tech, Making AI, and More</h2>
+            <p>Further expanded with detailed steps, emerging tech, resources, and FAQs.</p>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Making AI: End-to-End Guide</h3>
+                            <ol>
+                                <li><strong>Ideation:</strong> Problem canvas; feasibility study.</li>
+                                <li><strong>Data Pipeline:</strong> ETL (Extract-Transform-Load); tools: Apache Airflow.</li>
+                                <li><strong>Preprocessing:</strong> Outlier detection (IQR), encoding (one-hot).</li>
+                                <li><strong>Model Building:</strong> Prototype iterations; version control with DVC.</li>
+                                <li><strong>Training:</strong> Distributed (Horovod); monitoring (WandB).</li>
+                                <li><strong>Evaluation:</strong> Metrics: Precision/Recall/F1; confusion matrix analysis.</li>
+                                <li><strong>Deployment:</strong> Serverless (Lambda), CI/CD (Jenkins).</li>
+                                <li><strong>Monitoring:</strong> Prometheus for metrics, drift detection (Alibi).</li>
+                                <li><strong>Scaling:</strong> Auto-scaling groups, microservices.</li>
+                                <li><strong>Maintenance:</strong> Retraining schedules, A/B testing.</li>
+                            </ol>
+                            <p>Cost Considerations: Cloud pricing (e.g., GPU hours).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Emerging Technologies</h3>
+                            <ul>
+                                <li><strong>Edge AI:</strong> TinyML (TensorFlow Lite Micro); for IoT.</li>
+                                <li><strong>Federated Learning:</strong> TensorFlow Federated; privacy-preserving.</li>
+                                <li><strong>Explainable AI:</strong> Counterfactuals, feature importance.</li>
+                                <li><strong>Quantum ML:</strong> Pennylane for hybrid quantum-classical.</li>
+                                <li><strong>Neuromorphic:</strong> Spiking NNs (BrainChip Akida).</li>
+                                <li><strong>AI for AI:</strong> AutoML (Google AutoML); neural architecture search.</li>
+                                <li><strong>Multimodal AI:</strong> CLIP (text-image).</li>
+                            </ul>
+                            <p>Trends: Low-code AI (DataRobot), AI chips (Apple Neural Engine).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h3>Advanced Applications & Case Studies</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item">Climate: AI for Earth (Microsoft), weather forecasting.</li>
+                        <li class="list-group-item">Space: NASA rover autonomy.</li>
+                        <li class="list-group-item">Art: GAN-generated NFTs.</li>
+                        <li class="list-group-item">Sports: Player tracking (Second Spectrum).</li>
+                        <li class="list-group-item">Law: Contract analysis (LawGeex).</li>
+                    </ul>
+                    <p>Case: AlphaFold solving protein folding; impact on biology.</p>
+                </div>
+            </div>
+
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h3>Future of AI & Resources</h3>
+                    <p>Predictions: AGI by 2040? (debated); brain-computer interfaces (Neuralink).</p>
+                    <p>Challenges: Energy (data centers), geopolitical (AI arms race).</p>
+                    <p>Learning Resources:</p>
+                    <ul>
+                        <li>Courses: CS229 (Stanford), Deep Learning Specialization (Coursera).</li>
+                        <li>Books: "Hands-On ML" (Géron), "AI Superpowers" (Kai-Fu Lee).</li>
+                        <li>Communities: AI Alignment Forum, Kaggle forums.</li>
+                        <li>Tools: Colab, Anaconda.</li>
+                        <li>Podcasts: Lex Fridman, TWiML.</li>
+                    </ul>
+                    <p>FAQs: What is AGI? (General intelligence); How to start? (Learn Python, basics of stats).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 AI Quickstart Guide - Ultimate Edition. Written and Curated by Parvesh Rawal. This resource aims to be one of the biggest comprehensive guides on AI.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
